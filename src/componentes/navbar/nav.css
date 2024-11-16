@@ -1,0 +1,63 @@
+.nav {
+    padding: 10px;
+    display: flex;
+
+    align-items: center;
+    height: 5vh;
+    width: 80vw;
+
+    border-radius: 15px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+    width: 4%;
+}
+.ci2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+    width: 96%;
+    gap: 1vw;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Cambiar la disposición a columna */
+        align-items: center; /* Centrar los elementos */
+        width: 90vw; /* Hacer que el navbar ocupe el ancho completo */
+    }
+
+    .nav a {
+        margin: 5px 0; /* Espacio entre los enlaces en forma de columna */
+    }
+}
+
+/* Media query para pantallas aún más pequeñas (dispositivos muy pequeños) */
+@media (max-width: 480px) {
+    .nav {
+        padding: 15px;
+    }
+
+    .nav a {
+        font-size: 1.2em; /* Aumentar el tamaño de la fuente en pantallas pequeñas */
+    }
+}
+
+.active {
+    font-weight: bold;
+    color: #6633ee; /* Cambia esto por el color que desees */
+    text-decoration: none;
+}

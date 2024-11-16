@@ -1,0 +1,76 @@
+.content{
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    margin: 0;
+}
+
+.card{
+    display: grid;
+    place-items: center;
+    height: 35vh;
+    width: 15vw;
+    min-width: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    row-gap: 1px;
+    column-gap: 1px;
+
+}
+
+.card:hover{
+    box-shadow:0 0 5px rgb(102, 51, 238), 0 0 20px rgb(102, 51, 238), 0 0 30px rgba(0, 0, 255, 0.62);
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.imgen{
+    border-color: #1a1a1a;
+    margin: 40px;
+    background-image: url('../assets/lg.png');
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 36%;
+    width: 60%;
+}
+
+.imgen2{
+    border-color: #1a1a1a;
+    margin-top: 40px;
+margin-left: 20px;
+    margin-bottom: 50px;
+    background-image: url('../assets/team.png');
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 35%;
+    width: 80%;
+}
+
+.imgen3{
+    border-color: #1a1a1a;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    background-image: url('../assets/sp.png');
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 40%;
+    width: 55%;
+}

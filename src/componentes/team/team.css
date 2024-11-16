@@ -1,0 +1,109 @@
+.content{
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    margin: 0;
+}
+
+.card2{
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    width: 80vw;
+    min-width: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    row-gap: 1px;
+    column-gap: 1px;
+
+}
+
+.cardt{
+    display: grid;
+    position: relative;
+    place-items: center;
+    height: 35vh;
+    width: 15vw;
+    min-width: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(17, 23, 35, 0.66);
+    row-gap: 1px;
+    column-gap: 1px;
+
+}
+
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+h3,h6{
+    color: #6633ee;
+
+}
+
+.cardt:hover h3,
+.cardt:hover h6 {
+    transform: translateY(150px);
+
+}
+
+.cardt:hover h3{
+    font-size: 20px;
+}
+
+.cardt:hover .extra-text {
+    opacity: 1;
+}
+
+.cardt:hover .ctar {
+    opacity: 1;
+}
+
+.cardt div {
+    transition: transform 0.8s ease;
+}
+
+.ctar{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 90%;
+    height: 50%;
+    margin: 5%;
+    border-radius: 10px;
+    opacity: 0; /* Lo ocultamos inicialmente */
+    transition: opacity 0.3s ease;
+    background-color: #6633ee;
+}
+.extra-text {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    opacity: 0; /* Lo ocultamos inicialmente */
+    transition: opacity 0.3s ease;
+    color: #ffffff;
+
+}
